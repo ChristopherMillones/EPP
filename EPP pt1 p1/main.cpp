@@ -7,28 +7,33 @@ int main() {
     int n; // # of judges also size of array
     int j; // contestants number
     int temp;
-    string t;
 
     cout << "Number of Judges: ";
-    getline(cin, t);
+    cin  >> n;
+    cin.ignore(5,'\n');
+
 
     int *x = new int[n];
     cin  >> j; // Contestants number
-    cin.ignore(1000, '\n');
+    cin.ignore(5,' ');
 
 
-    for(int i = 0; i<= n; i++)
+    for(int i = 0; i<= n-1; i++)
     {
-        cin >> temp;
-        cin.ignore(1000, '\n');
-        cin.ignore();
-        x[i] = temp;
+
+        if(i <= n-1) // i <= 4
+        {
+            cout << "i: " << i << endl;
+            cin >> temp;
+            cin.ignore(1,' ');
+            x[i] = temp;
+        }
     }
 
-
-
-
-
+    for(int i = 0; i<= n-1; i++)
+    {
+        cout << x[i] << endl;
+    }
 
     return 0;
 }
