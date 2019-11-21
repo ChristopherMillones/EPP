@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include <regex>
+#include <map>
 using namespace std;
 
 int findAverageScore(int n, int* x);
@@ -12,7 +12,7 @@ int main() {
     int j; // contestants number
     int temp;
     int contAvg;
-
+    map<int,int> contestants;
 
 
     cout << "Number of Judges: ";
@@ -44,13 +44,23 @@ int main() {
         }
         contAvg = findAverageScore(n, x);
         cout << "Contestant   " << j << "    " << contAvg << endl;
+        contestants.insert(std::pair<int,int>(j,contAvg));
 
         cin  >> j; // Contestants number
+        if(j < 0 )
+            break;
         cin.ignore(100000,' ');
         cin.ignore(100000,' ');
         cin.ignore(100000,' ');
         cin.ignore(100000,' ');
         cin.ignore(100000,' ');
+    }
+
+    map<int,int>::iterator it = contestants.begin();
+    while(it != contestants.end())
+    {
+        cout << it->first << "  :  " << it->second << endl;
+        it++;
     }
 
     cout << "Contestant x had the highest score!";
