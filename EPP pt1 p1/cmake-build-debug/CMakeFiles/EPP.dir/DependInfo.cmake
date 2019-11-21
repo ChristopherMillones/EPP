@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Chris/CLionProjects/EPP/IntegerList.cpp" "C:/Users/Chris/CLionProjects/EPP/cmake-build-debug/CMakeFiles/EPP.dir/IntegerList.cpp.obj"
-  "C:/Users/Chris/CLionProjects/EPP/main.cpp" "C:/Users/Chris/CLionProjects/EPP/cmake-build-debug/CMakeFiles/EPP.dir/main.cpp.obj"
+  "C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntegerList.cpp" "C:/Users/Chris/Desktop/EPP/EPP pt1 p1/cmake-build-debug/CMakeFiles/EPP.dir/IntegerList.cpp.obj"
+  "C:/Users/Chris/Desktop/EPP/EPP pt1 p1/main.cpp" "C:/Users/Chris/Desktop/EPP/EPP pt1 p1/cmake-build-debug/CMakeFiles/EPP.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\EPP
+CMAKE_SOURCE_DIR = "C:\Users\Chris\Desktop\EPP\EPP pt1 p1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\EPP\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EPP.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/EPP.dir/flags.make
 
 CMakeFiles/EPP.dir/main.cpp.obj: CMakeFiles/EPP.dir/flags.make
 CMakeFiles/EPP.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\EPP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EPP.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EPP.dir\main.cpp.obj -c C:\Users\Chris\CLionProjects\EPP\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EPP.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EPP.dir\main.cpp.obj -c "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\main.cpp"
 
 CMakeFiles/EPP.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EPP.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\EPP\main.cpp > CMakeFiles\EPP.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\main.cpp" > CMakeFiles\EPP.dir\main.cpp.i
 
 CMakeFiles/EPP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EPP.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chris\CLionProjects\EPP\main.cpp -o CMakeFiles\EPP.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\main.cpp" -o CMakeFiles\EPP.dir\main.cpp.s
 
 CMakeFiles/EPP.dir/IntegerList.cpp.obj: CMakeFiles/EPP.dir/flags.make
 CMakeFiles/EPP.dir/IntegerList.cpp.obj: ../IntegerList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\EPP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EPP.dir/IntegerList.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EPP.dir\IntegerList.cpp.obj -c C:\Users\Chris\CLionProjects\EPP\IntegerList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EPP.dir/IntegerList.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EPP.dir\IntegerList.cpp.obj -c "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\IntegerList.cpp"
 
 CMakeFiles/EPP.dir/IntegerList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EPP.dir/IntegerList.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\EPP\IntegerList.cpp > CMakeFiles\EPP.dir\IntegerList.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\IntegerList.cpp" > CMakeFiles\EPP.dir\IntegerList.cpp.i
 
 CMakeFiles/EPP.dir/IntegerList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EPP.dir/IntegerList.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chris\CLionProjects\EPP\IntegerList.cpp -o CMakeFiles\EPP.dir\IntegerList.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\IntegerList.cpp" -o CMakeFiles\EPP.dir\IntegerList.cpp.s
 
 # Object files for target EPP
 EPP_OBJECTS = \
@@ -96,7 +96,7 @@ EPP.exe: CMakeFiles/EPP.dir/build.make
 EPP.exe: CMakeFiles/EPP.dir/linklibs.rsp
 EPP.exe: CMakeFiles/EPP.dir/objects1.rsp
 EPP.exe: CMakeFiles/EPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Chris\CLionProjects\EPP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable EPP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable EPP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EPP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/EPP.dir/clean:
 .PHONY : CMakeFiles/EPP.dir/clean
 
 CMakeFiles/EPP.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Chris\CLionProjects\EPP C:\Users\Chris\CLionProjects\EPP C:\Users\Chris\CLionProjects\EPP\cmake-build-debug C:\Users\Chris\CLionProjects\EPP\cmake-build-debug C:\Users\Chris\CLionProjects\EPP\cmake-build-debug\CMakeFiles\EPP.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Chris\Desktop\EPP\EPP pt1 p1" "C:\Users\Chris\Desktop\EPP\EPP pt1 p1" "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug" "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug" "C:\Users\Chris\Desktop\EPP\EPP pt1 p1\cmake-build-debug\CMakeFiles\EPP.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/EPP.dir/depend
 
