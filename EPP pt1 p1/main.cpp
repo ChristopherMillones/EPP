@@ -14,15 +14,11 @@ int main() {
     int contAvg;
     map<int,int> contestants;
 
-
     cout << "Number of Judges: ";
     cin  >> n;
     cin.ignore(5,'\n');
     int *x = new int[n];
     cin  >> j; // Contestants number
-    cin.ignore(100000,' ');
-    cin.ignore(100000,' ');
-    cin.ignore(100000,' ');
     cin.ignore(100000,' ');
     cin.ignore(100000,' ');
 
@@ -43,7 +39,7 @@ int main() {
             }
         }
         contAvg = findAverageScore(n, x);
-        cout << "Contestant   " << j << "    " << contAvg << endl;
+        cout << "Contestant   " << j << "  " << contAvg << endl;
         contestants.insert(std::pair<int,int>(j,contAvg));
 
         cin  >> j; // Contestants number
@@ -51,21 +47,23 @@ int main() {
             break;
         cin.ignore(100000,' ');
         cin.ignore(100000,' ');
-        cin.ignore(100000,' ');
-        cin.ignore(100000,' ');
-        cin.ignore(100000,' ');
     }
 
     map<int,int>::iterator it = contestants.begin();
+
+    int gValue = 0;
+    int winner;
     while(it != contestants.end())
     {
-        cout << it->first << "  :  " << it->second << endl;
+        if(gValue < it->second)
+        {
+            gValue = it->second;
+            winner = it->first;
+        }
         it++;
     }
 
-    cout << "Contestant x had the highest score!";
-
-
+    cout << "Contestant " << winner << " had the score.";
 
     return 0;
 }
@@ -90,12 +88,6 @@ int findAverageScore(int n, int* x){
     return avg/(n-2);
 }
 
-void swap(int *xp, int *yp)
-{
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
 
 // A function to implement bubble sort
 void bubbleSort(int arr[], int n)
@@ -109,3 +101,9 @@ void bubbleSort(int arr[], int n)
                 swap(&arr[j], &arr[j+1]);
 }
 
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
