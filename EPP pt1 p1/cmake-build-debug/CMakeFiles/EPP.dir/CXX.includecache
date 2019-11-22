@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntListNode.h
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntegerList.cpp
+iostream
+-
+IntegerList.h
+C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntegerList.h
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntegerList.h
+stdexcept
+-
+IntListNode.h
+C:/Users/Chris/Desktop/EPP/EPP pt1 p1/IntListNode.h
+
 C:/Users/Chris/Desktop/EPP/EPP pt1 p1/main.cpp
 iostream
 -
