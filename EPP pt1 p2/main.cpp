@@ -11,6 +11,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         mylist.addFront(i);
     }
+    mylist.AddAtPosition(1,7);
 
     mylist.print();
 }

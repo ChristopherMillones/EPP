@@ -40,3 +40,25 @@ void IntegerListt::print() {		// print all elements
 int IntegerListt::size() const {				// list size
     return n;
 }
+
+void IntegerListt::AddAtPosition(int elem, int pos) {
+
+    if(pos == 0)
+    {
+        addFront(elem);
+    }else if (pos >= size())
+    {
+        IntListNode* temp = head;
+        while(temp != NULL)
+        {
+            if(temp->getNext() == NULL)
+            {
+                IntListNode* newElem = new IntListNode(elem, NULL);
+                temp->getNext() = newElem;
+            }
+            temp = temp->getNext();
+        }
+
+    }
+
+}

@@ -21,6 +21,7 @@ public:
     void removeFront();			// remove front item list
     void print();
     int size() const;					// list size
+    void AddAtPosition(int elem, int pos);
 private:
     IntListNode* head;				// head of the list
     int     n;							// number of items
