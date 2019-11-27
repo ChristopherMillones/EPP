@@ -42,23 +42,39 @@ int IntegerListt::size() const {				// list size
 }
 
 void IntegerListt::AddAtPosition(int elem, int pos) {
-
+    cout << "\n Func BEGIN \n";
     if(pos == 0)
     {
         addFront(elem);
     }else if (pos >= size())
     {
+        cout << "\n Inside else if \n";
         IntListNode* temp = head;
         while(temp != NULL)
         {
+            cout << "\n Inside While\n";
             if(temp->getNext() == NULL)
             {
+                cout << "\n Inside if \n";
                 IntListNode* newElem = new IntListNode(elem, NULL);
-                temp->getNext() = newElem;
+                temp->next = newElem;
+               // cout << temp->getNext()->getElement() << endl;
+                break;
             }
             temp = temp->getNext();
         }
-
+    }else if (pos > 0 && pos < size())
+    {
+        IntListNode* temp = head;
+        for(int i = 0; i <= pos-1; i++)
+        {
+            if(i == pos - 1)
+            {
+                IntListNode* newElem = new IntListNode(elem, temp->getNext());
+                temp->next = newElem;
+                break;
+            }
+            temp = temp->getNext();
+        }
     }
-
 }

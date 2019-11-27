@@ -8,10 +8,12 @@ int main() {
 
     IntegerListt mylist;
 
-    for (int i = 0; i < 5; i++) {
-        mylist.addFront(i);
-    }
-    mylist.AddAtPosition(1,7);
+    mylist.addFront(4);
+    mylist.addFront(8);
+    mylist.addFront(5);
+    mylist.addFront(2);
 
-    mylist.print();
+    mylist.AddAtPosition(6,2);
+
+    mylist.print(); // Top = head, Bottom = tail
 }

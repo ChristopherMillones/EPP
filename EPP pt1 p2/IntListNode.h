@@ -15,7 +15,7 @@ public:
 
     IntListNode *getNext() {return next;}
 
-private:
+public:
     int elem;					// linked list element value
     IntListNode *next;				// next item in the list
 };
