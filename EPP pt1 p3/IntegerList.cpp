@@ -78,3 +78,19 @@ void IntegerList::AddAtPosition(int elem, int pos) {
         }
     }
 }
+
+int IntegerList::sum(IntegerList x, int y)
+{
+
+    if(size() == 1)
+    {
+        return head->getElement();
+    }
+    else
+    {
+        y+=x.front();
+        x.removeFront();
+        return sum(x,y);
+    }
+
+};

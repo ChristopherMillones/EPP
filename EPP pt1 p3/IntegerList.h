@@ -22,6 +22,7 @@ public:
     void print();
     int size() const;					// list size
     void AddAtPosition(int elem, int pos);
+    int  sum(IntegerList x, int y);
 private:
     IntListNode* head;				// head of the list
     int     n;							// number of items
