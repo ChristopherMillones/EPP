@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntListNode.h
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntegerList.cpp
+iostream
+-
+IntegerList.h
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntegerList.h
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntegerList.h
+stdexcept
+-
+IntListNode.h
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntListNode.h
+
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/main.cpp
+stdexcept
+-
+iostream
+-
+IntegerList.h
+C:/Users/Chris/Desktop/EPP/EPP pt1 p3/IntegerList.h
+
