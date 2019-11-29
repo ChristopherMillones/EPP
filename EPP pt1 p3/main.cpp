@@ -16,5 +16,5 @@ int main() {
 
     mylist.AddAtPosition(6,2);
     mylist.print(); // Top = head, Bottom = tail
-    cout << "\nMy Sum: " << mylist.sum(mylist, sum) << endl;
+    cout << "My Sum: " << mylist.sum(mylist, sum) << endl;
 }

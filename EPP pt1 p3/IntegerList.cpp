@@ -12,7 +12,7 @@ int& IntegerList::front() 		// return front element
 
 IntegerList::~IntegerList()			// destructor
 {
-    while (n > 0) removeFront();
+    //while (n > 0) removeFront();
 }
 
 void IntegerList::addFront(int e) {	// add to front of list
@@ -27,6 +27,7 @@ void IntegerList::removeFront() {		// remove front item
     head = old->getNext();			// skip over old head
     delete old;				// delete the old head
     n--;
+
 }
 
 void IntegerList::print() {		// print all elements
@@ -42,7 +43,6 @@ int IntegerList::size() const {				// list size
 }
 
 void IntegerList::AddAtPosition(int elem, int pos) {
-    cout << "\n Func BEGIN \n";
     if(pos == 0)
     {
         addFront(elem);
@@ -59,6 +59,7 @@ void IntegerList::AddAtPosition(int elem, int pos) {
                 IntListNode* newElem = new IntListNode(elem, NULL);
                 temp->next = newElem;
                 // cout << temp->getNext()->getElement() << endl;
+                n++;
                 break;
             }
             temp = temp->getNext();
@@ -72,6 +73,7 @@ void IntegerList::AddAtPosition(int elem, int pos) {
             {
                 IntListNode* newElem = new IntListNode(elem, temp->getNext());
                 temp->next = newElem;
+                n++;
                 break;
             }
             temp = temp->getNext();
@@ -82,9 +84,11 @@ void IntegerList::AddAtPosition(int elem, int pos) {
 int IntegerList::sum(IntegerList x, int y)
 {
 
-    if(size() == 1)
+    if(x.size() == 1)
     {
-        return head->getElement();
+        y+=x.front();
+        x.removeFront();
+        return y;
     }
     else
     {
