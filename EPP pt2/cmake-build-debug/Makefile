@@ -122,6 +122,33 @@ EPP_pt2/fast:
 	$(MAKE) -f CMakeFiles\EPP_pt2.dir\build.make CMakeFiles/EPP_pt2.dir/build
 .PHONY : EPP_pt2/fast
 
+Part.obj: Part.cpp.obj
+
+.PHONY : Part.obj
+
+# target to build an object file
+Part.cpp.obj:
+	$(MAKE) -f CMakeFiles\EPP_pt2.dir\build.make CMakeFiles/EPP_pt2.dir/Part.cpp.obj
+.PHONY : Part.cpp.obj
+
+Part.i: Part.cpp.i
+
+.PHONY : Part.i
+
+# target to preprocess a source file
+Part.cpp.i:
+	$(MAKE) -f CMakeFiles\EPP_pt2.dir\build.make CMakeFiles/EPP_pt2.dir/Part.cpp.i
+.PHONY : Part.cpp.i
+
+Part.s: Part.cpp.s
+
+.PHONY : Part.s
+
+# target to generate assembly for a file
+Part.cpp.s:
+	$(MAKE) -f CMakeFiles\EPP_pt2.dir\build.make CMakeFiles/EPP_pt2.dir/Part.cpp.s
+.PHONY : Part.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... EPP_pt2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Part.obj
+	@echo ... Part.i
+	@echo ... Part.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

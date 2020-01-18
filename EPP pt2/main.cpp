@@ -29,30 +29,25 @@ int main() {
     cin.get(choice);
     cin.ignore(10000,'\n');
 
+    do{
+        switch(toupper(choice))
+        {
+            case 'N':cout << "You choose N\n";
+                break;
+            case 'F':cout << "You choose F\n";
+                break;
+            case 'A':cout << "You choose A\n";
+                break;
+            case 'Q':cout << "You choose Q\n";
+                break;
+            default: cout << "Invalid Character";
 
-    switch(toupper(choice))
-    {
-        case 'N':break;
-        case 'F':break;
-        case 'A':break;
-        case 'Q':break;
-        default: cout << "deafult";
+        }
+    }while(toupper(choice) != 'Q');
 
-    }
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 void printWelcome()
 {

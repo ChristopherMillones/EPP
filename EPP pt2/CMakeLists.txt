@@ -3,4 +3,4 @@ project(EPP_pt2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(EPP_pt2 main.cpp)
+add_executable(EPP_pt2 main.cpp Part.h)
