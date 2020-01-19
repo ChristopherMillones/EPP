@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EPP_pt2.dir/main.cpp.obj"
-  "CMakeFiles/EPP_pt2.dir/Part.cpp.obj"
   "EPP_pt2.pdb"
   "EPP_pt2.exe"
   "EPP_pt2.exe.manifest"

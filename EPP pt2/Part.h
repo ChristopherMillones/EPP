@@ -8,77 +8,72 @@
 
 using namespace std;
 
-class Part {
-public:
-    Part();
-
-    ~Part(){}
-
-
-    void setpartid(int id);
-    void setdescription(string description);
-    void setprice(float price);
-    void setinventory(int inventory);
-
-    int getpartid();
-    string getdescription();
-    float getprice();
-    int getinventory();
-
-
-private:
+struct node
+{
     int partId;
     string description;
     float price;
     int inventory;
+    node* next;
+};
+
+class Part {
+public:
+    Part();
+
+    ~Part();
+
+    void insertNode(int partId, string description, float price, int inventory);
+    int size();
+
+
+
+
+
+
+private:
+    int count = 0;
+    node* head;
 };
 
 Part::Part() {
-
-    partId = 0;
-    description = "";
-    price = 0.00;
-    inventory = 0;
+    count = 0;
 }
 
 Part::~Part() {
 }
 
-void Part::setdescription(string description) {
-    this->description = description;
+int Part::size() {
+    return count;
 }
 
-void Part::setinventory(int inventory) {
-    this->inventory = inventory;
+void Part::insertNode(int partId, string description, float price, int inventory) {
+    node* temp = new node;
+    temp->partId = partId;
+    temp->description = description;
+    temp->price = price;
+    temp->inventory = inventory;
+    temp->next = NULL;
+
+    if(size() == 0)
+    {
+        head = temp;
+        count++;
+    }
+    else
+    {
+        node* temp2 = head;
+        while(temp2 != NULL)
+        {
+            if(temp2->next == NULL)
+            {
+                temp2->next = temp;
+            }
+            temp2 = temp2->next;
+        }
+        count++;
+    }
 }
-
-void Part::setpartid(int id) {
-    partId = id;
-}
-
-void Part::setprice(float price) {
-    this->price = price;
-}
-
-int Part::getpartid() {
-    return this->partId;
-}
-
-string Part::getdescription() {
-    return this->description
-}
-
-float Part::getprice() {
-    return this->price
-}
-
-int Part::getinventory() {
-    return this->inventory
-}
-
-
-
-
 
 
 

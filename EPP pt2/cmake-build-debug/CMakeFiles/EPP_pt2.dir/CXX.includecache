@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Chris/Desktop/EPP/EPP pt2/Part.h
+iostream
+-
+
 C:/Users/Chris/Desktop/EPP/EPP pt2/main.cpp
 iostream
 -
 fstream
 -
+Part.h
+C:/Users/Chris/Desktop/EPP/EPP pt2/Part.h
 

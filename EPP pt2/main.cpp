@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-
+#include "Part.h"
 using namespace std;
 
 void printWelcome();
@@ -9,7 +9,6 @@ int main() {
 
     string directory = "C:\\Users\\Chris\\Desktop\\EPP\\EPP pt2\\textSave.txt";
     ifstream inFile;
-    string test;
     char choice;
 
     inFile.open(directory);
@@ -18,10 +17,6 @@ int main() {
         cerr << "File is NOT open" << endl;
     }
 
-    while(!inFile.eof())
-    {
-        getline(inFile, test);
-    }
 
     printWelcome();
     printMenu();

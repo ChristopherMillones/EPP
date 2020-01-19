@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Chris/Desktop/EPP/EPP pt2/Part.cpp">
-			<Option target="EPP_pt2"/>
-		</Unit>
 		<Unit filename="C:/Users/Chris/Desktop/EPP/EPP pt2/Part.h">
 			<Option target="EPP_pt2"/>
 		</Unit>
