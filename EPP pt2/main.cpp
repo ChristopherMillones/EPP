@@ -11,6 +11,14 @@ int main() {
     ifstream inFile;
     char choice;
 
+    //Item properties
+    int partId;
+    string description;
+    float price;
+    int inventory;
+    Part stock;
+
+
     inFile.open(directory);
     if(!inFile.is_open())
     {
@@ -19,16 +27,29 @@ int main() {
 
 
     printWelcome();
-    printMenu();
-    cout << "Please enter a command!:";
-    cin.get(choice);
-    cin.ignore(10000,'\n');
 
     do{
+        printMenu();
+        cout << "Please enter a command!:";
+        cin.get(choice);
+        cin.ignore(10000,'\n');
         switch(toupper(choice))
         {
-            case 'N':cout << "You choose N\n";
-                break;
+            case 'N':
+                 cout << "\nEnter Part Id:";
+                 cin  >> partId;
+                 cin.ignore(10000, '\n');
+                 cout << "Enter Short Item Description:";
+                 getline(cin, description);
+                 cout << "Enter Price:";
+                 cin  >> price;
+                 cin.ignore(10000, '\n');
+                 cout << "Enter number of products in inventory:";
+                 cin  >> inventory;
+                 cin.ignore(10000, '\n');
+                 stock.insertNode(partId, description, price, inventory);
+                 break;
+
             case 'F':cout << "You choose F\n";
                 break;
             case 'A':cout << "You choose A\n";
@@ -39,7 +60,7 @@ int main() {
 
         }
     }while(toupper(choice) != 'Q');
-
+    stock.print();
 
     return 0;
 }

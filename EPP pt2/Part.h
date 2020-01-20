@@ -24,6 +24,7 @@ public:
     ~Part();
 
     void insertNode(int partId, string description, float price, int inventory);
+    void print();
     int size();
 
 
@@ -38,6 +39,7 @@ private:
 
 Part::Part() {
     count = 0;
+    head = NULL;
 }
 
 Part::~Part() {
@@ -55,6 +57,7 @@ void Part::insertNode(int partId, string description, float price, int inventory
     temp->inventory = inventory;
     temp->next = NULL;
 
+
     if(size() == 0)
     {
         head = temp;
@@ -63,16 +66,33 @@ void Part::insertNode(int partId, string description, float price, int inventory
     else
     {
         node* temp2 = head;
-        while(temp2 != NULL)
+        while(temp2->next != NULL)
         {
-            if(temp2->next == NULL)
-            {
-                temp2->next = temp;
-            }
             temp2 = temp2->next;
+        }
+        if(temp2->next == NULL)
+        {
+            temp2->next = temp;
         }
         count++;
     }
+}
+
+void Part::print() {
+    node* temp = head;
+    int element = 0;
+    while(element != size())
+    {
+        cout << "Item[" << element+1 <<"]:\n";
+        cout << "PART ID: " << temp->partId << endl;
+        cout << "DESCRIPTION:  " << temp->description << endl;
+        cout << "PRICE:   $" << temp->price << endl;
+        cout << "INVENTORY:   " << temp->inventory << endl;
+        element++;
+        temp = temp->next;
+    }
+
+
 }
 
 
