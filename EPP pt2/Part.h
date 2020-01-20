@@ -83,7 +83,7 @@ void Part::print() {
     int element = 0;
     while(element != size())
     {
-        cout << "Item[" << element+1 <<"]:\n";
+        cout << "\tItem[" << element+1 <<"]:\n";
         cout << "PART ID: " << temp->partId << endl;
         cout << "DESCRIPTION:  " << temp->description << endl;
         cout << "PRICE:   $" << temp->price << endl;

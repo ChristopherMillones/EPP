@@ -29,6 +29,7 @@ int main() {
     printWelcome();
 
     do{
+        cout << endl;
         printMenu();
         cout << "Please enter a command!:";
         cin.get(choice);
@@ -54,7 +55,7 @@ int main() {
                 break;
             case 'A':cout << "You choose A\n";
                 break;
-            case 'Q':cout << "You choose Q\n";
+            case 'Q':cout << "You choose Q\n\n";
                 break;
             default: cout << "Invalid Character";
 
