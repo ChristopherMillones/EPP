@@ -57,7 +57,6 @@ void Part::insertNode(int partId, string description, float price, int inventory
     temp->inventory = inventory;
     temp->next = NULL;
 
-
     if(size() == 0)
     {
         head = temp;

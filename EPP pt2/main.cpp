@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "Part.h"
+#include <vector>
 using namespace std;
 
 void printWelcome();
@@ -9,6 +10,7 @@ int main() {
 
     string directory = "C:\\Users\\Chris\\Desktop\\EPP\\EPP pt2\\textSave.txt";
     ifstream inFile;
+    ofstream ofFile;
     char choice;
 
     //Item properties
@@ -25,9 +27,26 @@ int main() {
         cerr << "File is NOT open" << endl;
     }
 
+    if(inFile.peek() != inFile.eof())
+    {
+        while(!inFile.eof())
+        {
+//            inFile >> partId;
+//            inFile.ignore(100000,'\n');
+//            getline(inFile, description);
+//            inFile >> price;
+//            inFile.ignore(100000,'\n');
+//            inFile >> inventory;
+//            inFile.ignore(100000,'\n');
+            inFile >> partId >> description >> price >> inventory;
+            stock.insertNode(partId,description,price,inventory);
+
+        }
+    }
+    inFile.close();
+
 
     printWelcome();
-
     do{
         cout << endl;
         printMenu();
@@ -62,6 +81,9 @@ int main() {
         }
     }while(toupper(choice) != 'Q');
     stock.print();
+
+    ofFile.open(directory, ofFile.out | ofFile.trunc);
+
 
     return 0;
 }
